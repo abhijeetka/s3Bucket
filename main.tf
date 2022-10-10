@@ -25,7 +25,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket  = "calibo-test-domain"
+    bucket  = "terraform-global-state-techstack-acc"
     region  = "us-east-1"
     encrypt = true
     key     = "tf-awss3-bucket-demo/terraform.tfstate"
